@@ -245,7 +245,7 @@ This shows: 1(column 1) + 1(column 2) + 0(column 3) = new b
 [1  3] [2]
 ```
 
-### Method 1: Linear Combination of Columns â­ (Preferred)
+### Method 1: Linear Combination of Columns (Preferred)
 
 **Think:** 1 × (column 1) + 2 × (column 2)
 
