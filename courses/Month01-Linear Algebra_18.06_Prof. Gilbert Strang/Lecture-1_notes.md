@@ -20,7 +20,7 @@
 - [3x3 System Example](#3x3-system-example)
 - [Matrix-Vector Multiplication](#matrix-vector-multiplication)
 - [Key Concepts](#key-concepts)
-- [Questions for Understanding](#questions-for-understanding)
+- [Important Questions](#important-questions)
 
 ---
 
