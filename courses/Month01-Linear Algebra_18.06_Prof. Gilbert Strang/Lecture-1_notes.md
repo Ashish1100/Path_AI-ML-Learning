@@ -2,7 +2,7 @@
 
 **Instructor:** Gilbert Strang  
 **Course:** MIT 18.06 Linear Algebra, Spring 2005  
-**Lecture:** 1 of 34  
+**Lecture:** 1
 **Topic:** The Geometry of Linear Equations  
 **Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ZK3O402wf1c)  
 **Course Page:** [web.mit.edu/18.06](http://web.mit.edu/18.06)
