@@ -197,7 +197,7 @@ A = [ 2  -1   0]     x = [x]     b = [ 0]
 
 **Solution:** The single point where all three planes meet
 
-### Column Picture (3D) â­
+### Column Picture (3D)
 
 ```
 x[ 2] + y[-1] + z[ 0] = [ 0]
@@ -247,7 +247,7 @@ This shows: 1(column 1) + 1(column 2) + 0(column 3) = new b
 
 ### Method 1: Linear Combination of Columns â­ (Preferred)
 
-**Think:** 1 Ã— (column 1) + 2 Ã— (column 2)
+**Think:** 1 × (column 1) + 2 × (column 2)
 
 ```
 1[2] + 2[5] = [2 + 10] = [12]
