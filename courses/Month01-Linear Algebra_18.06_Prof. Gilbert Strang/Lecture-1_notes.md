@@ -132,7 +132,7 @@ b = [0]
 - Equation 1: 2(1) - 2 = 0 
 - Equation 2: -1 + 2(2) = 3
 
-### Column Picture (2D) â­
+### Column Picture (2D) 
 
 Rewrite as linear combination:
 ```
@@ -151,13 +151,14 @@ x[2 ] + y[-1] = [0]
 **Solution Process:**
 1. Take 1 of column 1: (2, -1)
 2. Add 2 of column 2: 2(-1, 2) = (-2, 4)
-3. Result: (2, -1) + (-2, 4) = (0, 3) âœ“
+3. Result: (2, -1) + (-2, 4) = (0, 3) 
 
 **Answer:** x = 1, y = 2
 
 **Important Question:** Can we solve for **every** right-hand side b?
 
-**Answer for this 2Ã—2 case:** YES! All linear combinations of these two vectors fill the entire 2D plane.
+**Answer for this 2×2 case:** YES!  
+All linear combinations of these two vectors fill the entire 2D plane.
 
 ---
 
