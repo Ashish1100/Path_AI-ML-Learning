@@ -42,12 +42,15 @@ Given a system of linear equations, find the values of unknowns that satisfy all
 
 **Standard Form:**
 ```
-aâ‚â‚xâ‚ + aâ‚â‚‚xâ‚‚ + ... + aâ‚â‚™xâ‚™ = bâ‚
-aâ‚‚â‚xâ‚ + aâ‚‚â‚‚xâ‚‚ + ... + aâ‚‚â‚™xâ‚™ = bâ‚‚
-    â‹®
-aâ‚™â‚xâ‚ + aâ‚™â‚‚xâ‚‚ + ... + aâ‚™â‚™xâ‚™ = bâ‚™
+$$
+\begin{aligned}
+a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n &= b_1 \\
+a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n &= b_2 \\
+\vdots \\
+a_{n1}x_1 + a_{n2}x_2 + \cdots + a_{nn}x_n &= b_n
+\end{aligned}
+$$
 ```
-
 ---
 
 ## Three Perspectives on Linear Systems
