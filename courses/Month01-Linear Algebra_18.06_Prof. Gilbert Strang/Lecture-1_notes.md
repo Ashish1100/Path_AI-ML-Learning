@@ -660,7 +660,7 @@ No solution exists for those 𝒃 outside the column space.
 
 ---
 
-## Top 5 Interview Questions**
+## Top 5 Interview Questions
 
 
 ### 1. What are the three ways to view a linear system Ax = b?
@@ -753,9 +753,8 @@ Give a geometric condition and example.
 
 **Example**
 
-A =
-[1  2  
- 2  4]
+A =[1  2  
+    2  4]
 
 Column2 = 2 × column1 → dependent  
 Column space = line  
