@@ -350,16 +350,6 @@ It reveals the **fundamental structure** of linear systems and helps understand:
 
 ---
 
-## Next Lecture Preview
-
-**Lecture 2: Elimination**
-- Systematic method to solve Ax = b
-- Works for any size system
-- The algorithm used by software
-- Reveals when no solution exists
-
----
-
 ## Summary
 
 This lecture introduced the **geometric intuition** behind linear systems:
