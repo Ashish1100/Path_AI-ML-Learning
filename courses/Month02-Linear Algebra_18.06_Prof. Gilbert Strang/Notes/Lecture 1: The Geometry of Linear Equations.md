@@ -445,6 +445,74 @@ Since a₃ = [0, -1, 4]ᵀ is exactly b, the solution is immediate: x = 0, y = 0
 
 ---
 
+### 4.3 The 3D Case
+
+**System:**
+```
+a₁₁x₁ + a₁₂x₂ + ... + a₁₉x₉ = b₁
+a₂₁x₁ + a₂₂x₂ + ... + a₂₉x₉ = b₂
+...
+a₉₁x₁ + a₉₂x₂ + ... + a₉₉x₉ = b₉
+```
+
+
+**Matrix form:**
+```
+┌                           ┐ ┌    ┐   ┌    ┐
+│  a₁₁   a₁₂   ...   a₁₉    │ │ x₁ │   │ b₁ │
+│  a₂₁   a₂₂   ...   a₂₉    │ │ x₂ │   │ b₂ │
+│   ⋮     ⋮     ⋱    ⋮       │ │  ⋮  │ = │  ⋮ │
+│  a₉₁   a₉₂   ...   a₉₉    │ │ x₉ │   │ b₉ │
+└                           ┘ └    ┘   └    ┘
+```
+The same concepts from your 3D example extend naturally to 9-dimensional space (ℝ⁹), though we lose the ability to visualize them directly.
+
+#### Row Picture in 9D
+
+In 9-dimensional space, each linear equation defines an **8-dimensional hyperplane**. A hyperplane in n-dimensional space always has dimension n-1.
+
+For a 9×9 system with 9 equations:
+- Each equation like a₁x₁ + a₂x₂ + ⋯ + a₉x₉ = b defines an 8D hyperplane in ℝ⁹
+- With full rank (non-parallel hyperplanes), all **9 hyperplanes intersect at a single point**
+- This unique intersection point is your solution vector in 9D space
+
+Just as three non-parallel planes in 3D meet at a point, nine "generic" (non-parallel, independent) hyperplanes in 9D meet at exactly one point.
+
+#### Column Picture in 9D
+
+The column picture remains conceptually identical:
+
+**Given:**
+- Matrix **A** has 9 columns: **a**₁, **a**₂, …, **a**₉ (each is a 9D vector)
+- Right-hand side vector **b** (also 9D)
+
+**Find:** Coefficients x₁, x₂, …, x₉ such that: x₁·a₁ + x₂·a₂ + ⋯ + x₉·a₉ = b
+
+
+You're looking for a **linear combination of nine 9D column vectors** that produces **b**. If one of the columns equals **b** exactly (as a₃ did in your 3D example), the solution is immediate.
+
+#### Key Differences from 3D
+
+| Aspect | 3D | 9D |
+|--------|----|----|
+| Geometric object per equation | 2D plane | 8D hyperplane |
+| Intersection of 2 equations | Line (1D) | 7D hyperplane |
+| Full system intersection | Point (unique solution) | Point (unique solution) |
+| Visualization | Possible to sketch | Requires projection/abstraction |
+
+#### Underdetermined Systems
+
+If you have fewer than 9 equations in 9D, the intersection is a higher-dimensional subspace:
+- **1 equation**: 8D hyperplane
+- **2 equations**: 7D subspace (intersection of two 8D hyperplanes)
+- **8 equations**: 1D line
+- **k equations**: (9-k)-dimensional subspace
+
+The geometric intuition remains: each additional constraint "slices" away one dimension until you reach a unique point (or determine the system has no solution).
+
+
+---
+
 ### 4.5 When Does Solvability Fail?
 
 **Singular matrix (columns linearly dependent):**
