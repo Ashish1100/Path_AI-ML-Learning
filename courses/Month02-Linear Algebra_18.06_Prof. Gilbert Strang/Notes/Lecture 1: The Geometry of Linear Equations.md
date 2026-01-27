@@ -877,6 +877,8 @@ The row picture and column picture are two views of the same system. The row pic
 **Answer:** 
 In regression, we have n features (columns of the design matrix A) and m samples (rows). If the features are linearly dependent (e.g., one feature is a linear combination of others), A is rank-deficient, and the normal equations AᵀA x = Aᵀb have infinitely many solutions (the features don't uniquely determine the target). Conversely, if features are independent, the system has a unique solution. High multicollinearity (near-dependence) makes the solution numerically unstable. Understanding rank and column space is critical for feature engineering and diagnosing model issues.
 
+---
+
 ### 6: Can 3 equations in 2 unknowns have a solution?
 
 **Answer:**
@@ -889,6 +891,8 @@ Three lines in a 2D plane usually form a triangle and do not share a single comm
 A solution exists only if the third line passes **exactly through** the intersection of the first two.  
 This requires the vector 'b' to be a **linear combination of the columns** of the 3×2 matrix A.
 
+---
+
 ### 7: How do you conceptually multiply a matrix by a vector?
 
 **Answer:**  
@@ -897,6 +901,8 @@ Do **not** think of rows. Think of **columns**.
 A x = x₁(col₁) + x₂(col₂) + … + xₙ(colₙ)
 
 The result is a **weighted sum of the columns** of A.
+
+---
 
 ### 8: What is a **singular matrix**?
 
@@ -908,6 +914,8 @@ Geometrically, the columns lie in a **lower-dimensional space**
 - Determinant = **0**
 - Matrix is **not invertible**
 
+---
+
 ### 9: If Ax = 0, what is the **trivial solution**?
 
 **Answer:**  
@@ -918,12 +926,16 @@ The solution is always x = 0 (the zero vector).
 - If A is **singular**, there are **non-zero solutions**  
   (vectors in the **null space**).
 
+---
+
 ### 10: What does it mean for a system to be **linear**?
 
 **Answer:**  
 Variables are only multiplied by constants and added.  
 Geometrically, linear systems preserve lines and planes  
 (planes don’t curve).
+
+---
 
 ### 11: Why is **Linear Algebra** important for **Machine Learning**?
 
@@ -932,6 +944,8 @@ ML models represent data as **vectors** and transformations as **matrices**.
 Understanding column spaces helps with:
 - Dimensionality reduction
 - Feature independence
+
+---
 
 ### 12: If I have a 3×3 matrix and **Col₃ = Col₁ + Col₂**, is it invertible?
 
