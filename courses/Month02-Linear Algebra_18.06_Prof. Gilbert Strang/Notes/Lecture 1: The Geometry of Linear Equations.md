@@ -878,6 +878,7 @@ The row picture and column picture are two views of the same system. The row pic
 In regression, we have n features (columns of the design matrix A) and m samples (rows). If the features are linearly dependent (e.g., one feature is a linear combination of others), A is rank-deficient, and the normal equations AᵀA x = Aᵀb have infinitely many solutions (the features don't uniquely determine the target). Conversely, if features are independent, the system has a unique solution. High multicollinearity (near-dependence) makes the solution numerically unstable. Understanding rank and column space is critical for feature engineering and diagnosing model issues.
 
 ### 6: Can 3 equations in 2 unknowns have a solution?
+
 **Answer:**
 - **Generally, no.**
 
@@ -893,11 +894,12 @@ This requires the vector 'b' to be a **linear combination of the columns** of th
 **Answer:**  
 Do **not** think of rows. Think of **columns**.
 
-A x⃗ = x₁(col₁) + x₂(col₂) + … + xₙ(colₙ)
+A x = x₁(col₁) + x₂(col₂) + … + xₙ(colₙ)
 
 The result is a **weighted sum of the columns** of A.
 
 ### 8: What is a **singular matrix**?
+
 **Answer:**  
 A square matrix whose columns are **not linearly independent**.  
 Geometrically, the columns lie in a **lower-dimensional space**  
@@ -917,22 +919,23 @@ The solution is always x = 0 (the zero vector).
   (vectors in the **null space**).
 
 ### 10: What does it mean for a system to be **linear**?
-**A:**  
+
+**Answer:**  
 Variables are only multiplied by constants and added.  
 Geometrically, linear systems preserve lines and planes  
 (planes don’t curve).
 
 ### 11: Why is **Linear Algebra** important for **Machine Learning**?
-**A:**  
+
+**Answer:**  
 ML models represent data as **vectors** and transformations as **matrices**.  
 Understanding column spaces helps with:
 - Dimensionality reduction
 - Feature independence
 
-### 12: If I have a 3×3 matrix and  
-**Col₃ = Col₁ + Col₂**, is it invertible?
+### 12: If I have a 3×3 matrix and **Col₃ = Col₁ + Col₂**, is it invertible?
 
-**A:**  
+**Answer:**  
 No. The columns are **dependent**.  
 The column space is only a **2D plane** in 3D space.  
 The matrix is **singular**.
@@ -941,10 +944,9 @@ The matrix is **singular**.
 
 ### 13: Interpret Ax = b physically.
 
-**A:**  
+**Answer:**  
 If columns of A are **movement directions** and x is  
 “how far to move,” then Ax = b asks:
-
 > *How far do I move in each direction to arrive at location b?*
 
 
